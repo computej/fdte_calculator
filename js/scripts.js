@@ -5,10 +5,10 @@ function saySomething(value1, value2) {
   const valueProduct = multiply(value1,value2);
   const valueQuotient = divide(value1,value2);
 
-  let alertMsg = "The sum is ".concat(valueSum,".\n");
-  alertMsg += "The difference is ".concat(valueDifference,".\n");
-  alertMsg += "The product is ".concat(valueProduct, ".\n");
-  alertMsg += "The quotient is ".concat(valueQuotient, ".");
+  let alertMsg = String(value1).concat(" + ",value2," = ",valueSum,"\n");
+  alertMsg += String(value1).concat(" - ",value2," = ",valueDifference,"\n");
+  alertMsg += String(value1).concat(" * ",value2," = ",valueProduct,"\n");
+  alertMsg += String(value1).concat(" / ",value2," = ",valueQuotient,"\n");
 
   window.alert(alertMsg);
 }
