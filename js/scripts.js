@@ -5,7 +5,12 @@ function saySomething(value1, value2) {
   const valueProduct = multiply(value1,value2);
   const valueQuotient = divide(value1,value2);
 
-  window.alert("The sum is ".concat(valueSum,".\n") + "The difference is ".concat(valueDifference,".\n") + "The product is ".concat(valueProduct, ".\n") + "The quotient is ".concat(valueQuotient, "."));
+  let alertMsg = "The sum is ".concat(valueSum,".\n");
+  alertMsg += "The difference is ".concat(valueDifference,".\n");
+  alertMsg += "The product is ".concat(valueProduct, ".\n");
+  alertMsg += "The quotient is ".concat(valueQuotient, ".");
+
+  window.alert(alertMsg);
 }
 
 function add(number1, number2) {
