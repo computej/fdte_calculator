@@ -1,8 +1,11 @@
 function saySomething(value1, value2) {
-  window.alert("The sum is " + add(value1 ,value2) + ".");
-  window.alert("The difference is " + subtract(value1 ,value2) + ".");
-  window.alert("The product is " + multiply(value1 ,value2) + ".");
-  window.alert("The quotient is " + divide(value1 ,value2) + ".");
+
+  const valueSum = add(value1,value2);
+  const valueDifference = subtract(value1,value2);
+  const valueProduct = multiply(value1,value2);
+  const valueQuotient = divide(value1,value2);
+
+  window.alert("The sum is ".concat(valueSum,".\n") + "The difference is ".concat(valueDifference,".\n") + "The product is ".concat(valueProduct, ".\n") + "The quotient is ".concat(valueQuotient, "."));
 }
 
 function add(number1, number2) {
